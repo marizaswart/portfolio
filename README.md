@@ -1,5 +1,7 @@
-source 'https://rubygems.org'
+#Portfolio
 
+
+Gem files:
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-livereload'
