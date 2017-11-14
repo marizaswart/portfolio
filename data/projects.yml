@@ -1,5 +1,19 @@
 - name: My First Website
+  language: HTML and CSS
   description: Simple HTML5 site I've build during the PrepCourse
 
 - name: FizzBuzz
+  language: Ruby and Rspec
   description: My first Test driven ruby project
+
+- name: ATM Challenge
+  language: Ruby
+  description: An ATM that allows you to have an account and draw money from the account
+
+- name: BMI Challenge
+  language: Javascript(jQuery, bootstrap)
+  description: Calculate your BMI using metric or imperial system
+
+- name: FizzBuzz(js)
+  language: Javascript and Jasmine
+  description: Test driving project
