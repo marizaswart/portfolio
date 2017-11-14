@@ -8,6 +8,7 @@
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || "Mariza Swart"
     = stylesheet_link_tag "site"
+    = partial 'partials/navbar'
     = partial 'partials/header'
     = javascript_include_tag "site"
   %body
