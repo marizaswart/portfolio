@@ -1,6 +1,21 @@
-#container
+#container-header
   %header
-    %h1 Mariza Swart
-    %p Striving for excellence
-    %a{ :href => "mailto:mariza.swart@gmail.com"}= "mariza.swart@gmail.com"
-%br
+    %nav.navbar.navbar-expand-lg.navbar-transparent.bg-transparent
+      %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarTogglerDemo02", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarTogglerDemo02", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      %a.navbar-brand{:href => "index.html"} Swartcode
+      #navbarTogglerDemo02.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto.mt-2.mt-md-0
+          %li.nav-item.active
+            %a.nav-link{:href => "index.html"}
+              About Me
+              %span.sr-only (current)
+          %li.nav-item
+            %a.nav-link{:href => "projects.html"} Projects
+          %li.nav-item
+            %a.nav-link{:href => "contact.html"} Contact and Experience
+    .card-1{ :style => "width:50%"}
+      .card-1-border
+        %h1 Mariza Swart
+        %p From customer service to coding for life
+        %a{ :href => "mailto:mariza.swart@gmail.com"}= "mariza.swart@gmail.com"
