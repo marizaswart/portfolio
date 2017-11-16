@@ -1,49 +1,28 @@
--# %br
--# #container1
--#   %btn.btn-success{"aria-controls" => "collapseCustomer", "aria-expand" => "false", "data-target" => "#collapseCustomer", "data-toggle" => "collapse", :type => "button"}
--#     %h2
--#       %strong Customer Success Manager
--#       \- Sqore
--#     #collapseCustomer.collapse
--#       %p January 2017 - September 2017
--#       %ul
--#         %li
--#           Responsible for the online platform which includes answering incoming questions
--#           and help clients solve any technical challenges that comes up
--#         %li The first point of contact for international clients
--#         %li
--#           Client introduction and communication to the product for successful delivery
--#         %li
--#           Responsible for developing the operational aspect of the delivery process,
--#           including set-up, client management and internal coordination between different
--#           departments
--#         %li
--#           Coordinating with the marketing team to ensure the implementation of a
--#           successful marketing strategy
--#         %li The voice of the client to drive product development
-
 %br
 #container2
   .d-flex.justify-content-sm-between
     .profile
       %center
         %img.img-thumbnail{:src => "/images/mariza_head_photo.jpg", :style => "width:50%;height:50%;"}
+          .social_media.bottom
+          %a{:href => "https://www.facebook.com/mariza.swart", :target => "_blank", :title => "follow me on facebook"}
+            %img{:alt => "follow me on facebook", :border => "0", :src => "https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png"}/
+          %a{:href => "https://www.linkedin.com/in/mariza-swart/", :target => "_blank", :title => "follow me on LinkedIn"}
+            %img{:alt => "follow me on LinkedIn", :border => "0", :src => "https://www.shareicon.net/data/48x48/2017/06/30/888051_logo_512x512.png"}/
+          %a{:href => "https://www.instagram.com/marizaswart/", :target => "_blank", :title => "follow me on instagram"}
+            %img{:alt => "follow me on instagram", :border => "0", :src => "https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png"}/
+
     .contact
       %h3
         %strong Contact Me
       %p You are always welcome to contact me directly by email but you can leave your name, company and email address here.
-      #frm1{:action => "/contacts.yml"}
-        .form-group
-          Name:
-          %input.form-control{:name => "name", :type => "text"}/
-          %br/
-          Company:
-          %input.form-control{:company => "company", :type => "text"}/
-          %br/
-          Contact Details:
-          %input.form-control{:contact => "email", :type => "text"}/
-          %br/
-          %input.btn.btn-dark{:onclick => "contactsForm()", :type => "button", :value => "Submit"}/
+      #frm1
+        %form{:action => "http://formspree.io/mariza.swart@gmail.com", :method => "POST"}
+        %input.form-control{:name => "email", :placeholder => "Your email", :type => "email"}/
+        %br
+        %textarea.form-control{:name => "message", :placeholder => "Your message"}
+        %br
+        %button.btn.btn-dark{:type => "submit"} Send
   .d-flex.justify-content-sm-between
     .cv_part1
       #container
@@ -54,9 +33,7 @@
             %li= job[:item1]
             %li= job[:item2]
             %li= job[:item3]
-            %li= job[:item4]
-            %li= job[:item5]
-            %li= job[:item6]
+            %br
     .skills
       %h3
         %strong Skills
