@@ -2,30 +2,44 @@
 //   background: transparant;
 // }
 header {
-  padding: 200px;
+  height: 0;
+  width: 100%;
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 53.67%;
+  border: solid;
 }
+
 .card-1 {
   font-family: sans-serif;
+  padding: 5px;
   display: block;
-  margin: auto;
+  margin: -300px auto auto auto;
   text-align: center;
   background-color: white;
+  width: 20%;
   opacity: 0.8;
+  border: solid;
 }
-.card-1-border {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: white;
-  border-width: 5px;
-}
+// .card-1-border {
+//   border-style: solid;
+//   border-radius: 5px;
+//   border-color: white;
+//   border-width: 5px;
+// }
 
 .aboutme {
   padding: 30px;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
 .p-1 {
+  flex: 1 1 auto;
   display: block;
   margin: auto;
   width: 50%;
@@ -34,6 +48,7 @@ header {
 }
 
 .p-2, .p-4 {
+  flex: 1 1 auto;
   align: right;
   width: 50%;
   padding: 10px;
@@ -105,11 +120,11 @@ header {
   // border: solid;
 }
 
-.cv_part2, .quotes {
-  width: 50%;
-  padding: 30px;
+.quotes {
+  margin-top: 20%;
+  padding: 5px;
   display: block;
-  margin-right: auto;
+
   // border: solid;
 }
 
@@ -134,4 +149,10 @@ a {
   &:hover {
     color: rgba(#000, 0.6);
   }
+}
+
+footer {
+  align-self: bottom;
+  padding: 20px;
+  color: white;
 }

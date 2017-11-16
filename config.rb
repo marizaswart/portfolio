@@ -33,7 +33,8 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/basics/helper-methods/
 #
 require 'lib/cvlist'
-helpers
+require 'lib/content_helper'
+helpers ContentHelper
 helpers do
   def display_date
     DateTime.now.strftime('%Y-%m-%d %H:%M')

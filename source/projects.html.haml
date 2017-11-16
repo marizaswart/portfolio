@@ -1,10 +1,9 @@
 #container
   .projects
     - data.projects.each do |project|
-      %h4= project[:name]
-      %p= project[:language]
-      %p= project[:description]
-      %br
-
-  -# .project.d-flex.flex-column
-  -#   %p=projects[0]
+      -# =row.size >= 576 ? .project.row.col-xl-2 : .project.col.col-sm-2
+      .project.col.col-sm-2
+        %h4= project[:name]
+        %p= project[:language]
+        %p= project[:description]
+        %br
