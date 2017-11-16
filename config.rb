@@ -35,6 +35,7 @@ page '/*.txt', layout: false
 require 'lib/cvlist'
 require 'lib/content_helper'
 helpers ContentHelper
+# helper BlogHelper
 helpers do
   def display_date
     DateTime.now.strftime('%Y-%m-%d %H:%M')
