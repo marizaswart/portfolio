@@ -31,10 +31,20 @@ page '/*.txt', layout: false
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-
+#
 # helpers do
-#   def some_helper
-#     'Helping'
+#   def display_projects
+#     section = []
+#     - data.projects.each do |project|
+#         hash = {
+#             project[:name]
+#             project[:language]
+#             project[:description]
+#         }
+#       project = projects[0]
+#       section_2 = projects[1]
+#       section_3 = projects[2]
+#       section_4 = projects[3]
 #   end
 # end
 

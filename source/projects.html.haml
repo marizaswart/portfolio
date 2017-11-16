@@ -1,7 +1,6 @@
 #container
-  .projects
+  .projects.d-flex.flex-column
     - data.projects.each do |project|
-      .card
-        %h4= project[:name]
-        %p= project[:language]
-        %p= project[:description]
+      %h4= project[:name]
+      %p= project[:language]
+      %p= project[:description]
