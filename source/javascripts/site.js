@@ -1,5 +1,4 @@
 // This is where it all goes :)
-:javascript
-    $(document).ready( function() {
-      $('.carousel').carousel();
-    } );
+function contactsForm() {
+  document.getElementById('frm1').submit();
+}

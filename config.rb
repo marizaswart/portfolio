@@ -32,21 +32,23 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 #
-# helpers do
-#   def display_projects
-#     section = []
-#     - data.projects.each do |project|
-#         hash = {
-#             project[:name]
-#             project[:language]
-#             project[:description]
-#         }
-#       project = projects[0]
-#       section_2 = projects[1]
-#       section_3 = projects[2]
-#       section_4 = projects[3]
-#   end
-# end
+require 'lib/cvlist'
+helpers
+helpers do
+  def display_date
+    DateTime.now.strftime('%Y-%m-%d %H:%M')
+  end
+  
+  def display_social_icon(contact)
+    if contact.name == 'Github'
+      haml_tag :i, class: 'fa fa-github fa-5'
+    elsif contact.name == 'Facebook'
+      haml_tag :i, class: 'fa fa-facebook fa-5'
+    elsif contact.name == 'Instagram'
+      haml_tag :i, class: 'fa fa-instagram fa-5'
+    end
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
