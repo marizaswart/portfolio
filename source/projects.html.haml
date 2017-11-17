@@ -1,5 +1,11 @@
 #container
   .projects
     - data.projects.each do |project|
-      %h4= project[:name]
-      %p= project[:description]
+      -# =row.size >= 576 ? .project.row.col-xl-2 : .project.col.col-sm-2
+      .project.row.row-flex.col-md-4
+        %h4= project[:name]
+        %img.img-thumbnail(src="#{project[:image]}" style="width:60%;height:40%;")
+        %p= project[:language]
+        %p= project[:description]
+        %a{href:"#{project.url}"}
+        %br

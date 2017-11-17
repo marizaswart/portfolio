@@ -1,12 +1,168 @@
+// nav {
+//   background: transparant;
+// }
+header {
+  height: 0;
+  width: 100%;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 53.67%;
+  border: solid;
+}
+
+.card-1 {
+  font-family: sans-serif;
+  padding: 5px;
+  display: block;
+  margin: -300px auto auto auto;
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  opacity: 0.8;
+  border: solid;
+}
+// .card-1-border {
+//   border-style: solid;
+//   border-radius: 5px;
+//   border-color: white;
+//   border-width: 5px;
+// }
+
+.aboutme {
+  padding: 30px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-1 {
+  flex: 1 1 auto;
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-2, .p-4 {
+  flex: 1 1 auto;
+  align: right;
+  width: 50%;
+  padding: 10px;
+}
+
+.p-3 {
+  align: left;
+  width: 50%;
+  padding: 3px;
+}
+
+@media(max-width: 767px) {
+  .p-1 {
+    position: relative;
+    top: 100px;
+    width: 100%;
+  }
+
+  .p-2 {
+    position: relative;
+    top: -100px;
+    width: 100%;
+  }
+
+  .p-3, .p-4 {
+    position: relative;
+    width: 100%;
+  }
+}
+// .projects {
+//   position: relative;
+//   border: solid;
+//
+// }
+/* display this row with flex and use wrap (= respect columns' widths) */
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: #fff;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // border: solid;
+}
+
+.social_media {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  align: right;
+  width: 50%;
+  padding: 30px;
+  padding-right: 50px;
+  // border: solid;
+}
+
+.frm1 {
+  padding: 20px;
+}
+
+.cv_part1, .skills {
+  width: 50%;
+  padding: 30px;
+  display: block;
+  margin-right: auto;
+  padding-right: 50px;
+  // border: solid;
+}
+
+.quotes {
+  margin-top: 20%;
+  padding: 5px;
+  display: block;
+
+  // border: solid;
+}
+
+// .process-bar {
+//   border: solid;
+// }
+
 body {
-  background-color: #fbc547;
+  background-color: #f7f8f9;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+  "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+  "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: max;
 }
 
 a {
@@ -18,7 +174,8 @@ a {
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+footer {
+  align-self: bottom;
+  padding: 20px;
+  color: white;
 }
