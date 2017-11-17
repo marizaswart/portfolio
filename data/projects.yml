@@ -1,25 +1,30 @@
 - name: My First Website
+  image: '/images/website.jpg'
   language: HTML and CSS
   description: Simple HTML5 site I've build during the PrepCourse
   url: https://github.com/marizaswart/marizaswart.github.io
 
 - name: FizzBuzz
+  image: '/images/fizzbuzz.jpg'
   language: Ruby and Rspec
   description: My first Test driven ruby project
   url: https://github.com/marizaswart/fizzbuzz
 
 
 - name: ATM Challenge
+  image: '/images/atm.jpg'
   language: Ruby
   description: An ATM that allows you to have an account and draw money from the account
   url: https://github.com/marizaswart/atm_challenge
 
 - name: BMI Challenge
+  image: '/images/bmi.jpg'
   language: Javascript(jQuery, bootstrap)
   description: Calculate your BMI using metric or imperial system
   url: https://github.com/marizaswart/bmi_challenge
 
 - name: FizzBuzz(js)
+  image: '/images/fizzbuzz.jpg'
   language: Javascript and Jasmine
   description: Test driving project
   url: https://github.com/marizaswart/js_fizzbuzz

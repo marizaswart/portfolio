@@ -78,11 +78,34 @@ header {
     width: 100%;
   }
 }
-.projects {
-  position: relative;
-  border: solid;
+// .projects {
+//   position: relative;
+//   border: solid;
+//
+// }
+/* display this row with flex and use wrap (= respect columns' widths) */
 
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: #fff;
+}
+
 .profile {
   display: block;
   margin-left: auto;

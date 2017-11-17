@@ -11,18 +11,17 @@
             %img{:alt => "follow me on LinkedIn", :border => "0", :src => "https://www.shareicon.net/data/48x48/2017/06/30/888051_logo_512x512.png"}/
           %a{:href => "https://www.instagram.com/marizaswart/", :target => "_blank", :title => "follow me on instagram"}
             %img{:alt => "follow me on instagram", :border => "0", :src => "https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png"}/
-
     .contact
       %h3
         %strong Contact Me
       %p You are always welcome to contact me directly by email but you can leave your name, company and email address here.
       #frm1
         %form{:action => "http://formspree.io/mariza.swart@gmail.com", :method => "POST"}
-        %input.form-control{:name => "email", :placeholder => "Your email", :type => "email"}/
-        %br
-        %textarea.form-control{:name => "message", :placeholder => "Your message"}
-        %br
-        %button.btn.btn-dark{:type => "submit"} Send
+          %input.form-control{:name => "email", :placeholder => "Your email", :type => "email"}
+          %br
+          %textarea.form-control{:name => "message", :placeholder => "Your message"}
+          %br
+          %button.btn.btn-dark{:type => "submit"} Send
   .row
     .cv_part1
       #container
