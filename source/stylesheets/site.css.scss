@@ -134,13 +134,16 @@ header {
   padding: 20px;
 }
 
-.cv_part1, .skills {
+.cv_part, .skills {
   width: 50%;
   padding: 30px;
   display: block;
   margin-right: auto;
   padding-right: 50px;
-  // border: solid;
+  border: solid;
+}
+.cv {
+  padding: 5%;
 }
 
 .quotes {
@@ -156,7 +159,7 @@ header {
 // }
 
 body {
-  background-color: #f7f8f9;
+  background-color: white;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
   "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",

@@ -23,11 +23,12 @@
           %br
           %button.btn.btn-dark{:type => "submit"} Send
   .row
-    .cv_part1
+    .cv_part
       #container
         .cv
           - data.cv.each do |job|
             %h4= job[:position]
+            -# %img(src="#{job[:logo]}" style="width:10%;height:10%;")
             %p= job[:date]
             %li= job[:item1]
             %li= job[:item2]
