@@ -83,28 +83,6 @@ header {
 //   border: solid;
 //
 // }
-/* display this row with flex and use wrap (= respect columns' widths) */
-
-.row-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-
-/* vertical spacing between columns */
-
-[class*="col-"] {
-  margin-bottom: 30px;
-}
-
-.content {
-  height: 100%;
-  padding: 20px 20px 10px;
-  color: #fff;
-}
 
 .profile {
   display: block;
@@ -142,9 +120,6 @@ header {
   padding-right: 50px;
   border: solid;
 }
-.cv {
-  padding: 5%;
-}
 
 .quotes {
   margin-top: 20%;
@@ -153,6 +128,11 @@ header {
 
   // border: solid;
 }
+
+// .card {
+//   display: block;
+//   text-align: center;
+// }
 
 // .process-bar {
 //   border: solid;

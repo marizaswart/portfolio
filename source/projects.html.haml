@@ -1,11 +1,28 @@
-#container
+#container-fluid
   .projects
     - data.projects.each do |project|
-      .card.text-center
-        .card-block
-          %h4= project[:name]
-          %img.card-image(src="#{project[:image]}" style="width:60%;height:40%;")
-          %p= project[:language]
-          %p= project[:description]
-          %a{href:"#{project.url}"}
-          %br
+      .row
+        .card-columns
+          .card
+            .card-header
+              %h4= project[:name]
+            %img.card-image.rounded(src="#{project[:image]}" style="width:60%;height:40%;")
+            %br
+              %p= project[:language]
+              %p= project[:description]
+            .card-link
+              %a{href:"#{project.url}"}
+            %br
+.card-deck
+  .card
+    .card-body
+      %h4.card-title Card title
+      %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+  .card
+    .card-body
+      %h4.card-title Card title
+      %p.card-text This card has supporting text below as a natural lead-in to additional content.
+  .card
+    .card-body
+      %h4.card-title Card title
+      %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.

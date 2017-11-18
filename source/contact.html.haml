@@ -27,13 +27,17 @@
       #container
         .cv
           - data.cv.each do |job|
-            %h4= job[:position]
-            -# %img(src="#{job[:logo]}" style="width:10%;height:10%;")
-            %p= job[:date]
-            %li= job[:item1]
-            %li= job[:item2]
-            %li= job[:item3]
-            %br
+            .card.text-center
+              .card-block
+                .card-header
+                  %h4= job[:position]
+                  %img(src="#{job[:logo]}" style="width:14%;height:10%;")
+                %p= job[:date]
+                %ul
+                %li= job[:item1]
+                %li= job[:item2]
+                %li= job[:item3]
+                %br
     .skills
       %h3
         %strong Skills
@@ -53,4 +57,7 @@
         %h3
           %strong Quotes
           %blockquote
-            "Mariza is awesome"
+            %p "Mariza is awesome"
+            %footer
+              Friend
+              %cite{:title => "BFF"} BFF

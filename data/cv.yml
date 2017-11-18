@@ -1,4 +1,4 @@
-- position: Customer Success Manager - Sqore 'images/sqore-logo.png'
+- position: Customer Success Manager - Sqore
   url: https://sqore.com/
   logo: 'images/sqore-logo.png'
   date: January 2017 - September 2017
@@ -11,6 +11,7 @@
 
 - position: Office Manager - Sqore
   url: https://sqore.com/
+  logo: 'images/sqore-logo.png'
   date: July 2015 - December 2016
   item1: New employee introductions to the product and office procedures
   item2: In charge of planning activities and meetings with employees, management, clients and board members
@@ -19,6 +20,7 @@
 
 - position: Cabin Crew - Qatar Airways
   url: https://www.qatarairways.com
+  logo: 'images/qatar_logo.png'
   date: January 2011 - October 2014
   item1: Direct customer experience from economy class to first class
   item2: Managing time and organising workloads
@@ -26,6 +28,7 @@
 
 - position: Marketing Assistant - ATI Systems
   url: https://www.atisystems.co.za/
+  logo: 'images/ati-logo.jpg'
   date: January 2009 - October 2010
   item1: Assisting Managing Director
   item2: Managing sales representatives’ data, weekly schedules and reports
@@ -33,6 +36,7 @@
 
 - position: Trainee Project Manager - WJ General Engineering
   url: http://wjengineering.net/
+  logo: 'images/wj-logo.png'
   date: January 2008 - December 2009
   item1: Assisting Managing Director
   item2: Assisting and leading a project
